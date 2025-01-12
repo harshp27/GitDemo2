@@ -45,6 +45,7 @@ public class eCommerce_tc_1 extends BaseTest {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
 		driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.androidsample.generalstore:id/btnLetsShop']")).click();
+		driver.hideKeyboard();
 		String toastMessage = driver.findElement(By.xpath("(//android.wigit.toast)[1]")).getAttribute("name"); //Verifying toast message 
 		Assert.assertEquals(toastMessage, "Please enter your name");
 		
