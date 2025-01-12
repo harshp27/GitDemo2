@@ -58,6 +58,7 @@ public void FillForm_PositiveFlow() {
 		driver.findElement(By.className("android.widget.EditText")).sendKeys("Harsh Pathak");
 		driver.hideKeyboard();
 		driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
+		driver.findElement(By.xpath("//android.widget.RadioButton[@text='Male']")).click();
 		driver.findElement(By.className("android.widget.Spinner")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();

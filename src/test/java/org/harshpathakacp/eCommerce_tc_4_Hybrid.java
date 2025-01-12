@@ -58,6 +58,8 @@ public class eCommerce_tc_4_Hybrid extends BaseTest{
 		formPage.setNameField(name);     // this is for action method
 		formPage.setGender(gender);
 		formPage.setcountrySelection(country);
+		formPage.setcountrySelection(counbc);
+		formPage.setcountrySelection(counm);
 
 		ProductCatalogue productCatalogue = formPage.setletsshopButton(); // method for skipping object creation
 		
